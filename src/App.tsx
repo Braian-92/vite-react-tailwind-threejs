@@ -99,11 +99,11 @@ function App() {
             </button>
           </div>
         </div>
-      </div>
-      
-      {/* Aquí está el componente Three.js debajo */}
-      <div className="w-full">
-        <ThreeScene />
+
+        {/* Componente Three.js debajo de las cartas */}
+        <div className="w-full mt-8">
+          <ThreeScene />
+        </div>
       </div>
     </div>
   );
