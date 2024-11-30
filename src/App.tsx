@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './styles/main.scss';
+import ThreeScene from './ThreeScene';  // Importar el componente ThreeScene
 
 function App() {
   const [count, setCount] = useState(0);
@@ -98,6 +99,11 @@ function App() {
             </button>
           </div>
         </div>
+      </div>
+      
+      {/* Aquí está el componente Three.js debajo */}
+      <div className="w-full">
+        <ThreeScene />
       </div>
     </div>
   );
