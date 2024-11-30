@@ -1,22 +1,32 @@
+// src/styles/main.scss
+
+// Usa el archivo variables.scss
+@use "variables" as *;
+
+// Directivas de Tailwind
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: $space-lg; // Usando la variable
   text-align: center;
 }
 
 .logo {
   height: 6em;
-  padding: 1.5em;
+  padding: $space-sm;
   will-change: filter;
   transition: filter 300ms;
 
   &:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
+    filter: drop-shadow(0 0 2em $primary-color);
   }
 
   &.react:hover {
-    filter: drop-shadow(0 0 2em #61dafbaa);
+    filter: drop-shadow(0 0 2em #61dafb);
   }
 }
 
@@ -38,7 +48,7 @@
 }
 
 .card {
-  padding: 2em;
+  padding: $space-md;
 }
 
 .read-the-docs {
